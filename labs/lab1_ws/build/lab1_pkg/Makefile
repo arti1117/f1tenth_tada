@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+=======
+CMAKE_SOURCE_DIR = /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +144,15 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles 0
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 .PHONY : all
 
 # The main clean target

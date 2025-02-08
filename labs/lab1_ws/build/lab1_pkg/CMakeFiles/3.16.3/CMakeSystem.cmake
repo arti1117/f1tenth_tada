@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 set(CMAKE_HOST_SYSTEM "Linux-5.10.192-tegra")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "5.10.192-tegra")
+=======
+set(CMAKE_HOST_SYSTEM "Linux-5.10.104-tegra")
+set(CMAKE_HOST_SYSTEM_NAME "Linux")
+set(CMAKE_HOST_SYSTEM_VERSION "5.10.104-tegra")
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 set(CMAKE_HOST_SYSTEM_PROCESSOR "aarch64")
 
 
 
+<<<<<<< HEAD
 set(CMAKE_SYSTEM "Linux-5.10.192-tegra")
 set(CMAKE_SYSTEM_NAME "Linux")
 set(CMAKE_SYSTEM_VERSION "5.10.192-tegra")
+=======
+set(CMAKE_SYSTEM "Linux-5.10.104-tegra")
+set(CMAKE_SYSTEM_NAME "Linux")
+set(CMAKE_SYSTEM_VERSION "5.10.104-tegra")
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 set(CMAKE_SYSTEM_PROCESSOR "aarch64")
 
 set(CMAKE_CROSSCOMPILING "FALSE")

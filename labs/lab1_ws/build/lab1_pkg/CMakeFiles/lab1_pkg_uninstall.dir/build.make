@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+=======
+CMAKE_SOURCE_DIR = /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 
 # Utility rule file for lab1_pkg_uninstall.
 
@@ -54,7 +61,11 @@ CMAKE_BINARY_DIR = /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_
 include CMakeFiles/lab1_pkg_uninstall.dir/progress.make
 
 CMakeFiles/lab1_pkg_uninstall:
+<<<<<<< HEAD
 	/usr/bin/cmake -P /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+=======
+	/usr/bin/cmake -P /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 
 lab1_pkg_uninstall: CMakeFiles/lab1_pkg_uninstall
 lab1_pkg_uninstall: CMakeFiles/lab1_pkg_uninstall.dir/build.make
@@ -71,6 +82,10 @@ CMakeFiles/lab1_pkg_uninstall.dir/clean:
 .PHONY : CMakeFiles/lab1_pkg_uninstall.dir/clean
 
 CMakeFiles/lab1_pkg_uninstall.dir/depend:
+<<<<<<< HEAD
 	cd /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles/lab1_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/CMakeFiles/lab1_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 .PHONY : CMakeFiles/lab1_pkg_uninstall.dir/depend
 

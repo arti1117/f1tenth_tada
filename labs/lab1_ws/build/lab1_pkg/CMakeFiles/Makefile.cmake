@@ -12,8 +12,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "ament_cmake_core/package.cmake"
   "ament_cmake_package_templates/templates.cmake"
+<<<<<<< HEAD
   "/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/CMakeLists.txt"
   "/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/package.xml"
+=======
+  "/home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/CMakeLists.txt"
+  "/home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/package.xml"
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   "/opt/ros/foxy/cmake/yamlConfig.cmake"
   "/opt/ros/foxy/cmake/yamlConfigVersion.cmake"
   "/opt/ros/foxy/cmake/yamlTargets-none.cmake"
@@ -25,7 +30,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-none.cmake"
   "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-version.cmake"
   "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config.cmake"
+<<<<<<< HEAD
   "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/pythonpath.sh.in"
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/package_level/local_setup.bash.in"
   "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/package_level/local_setup.sh.in"
   "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/package_level/local_setup.zsh.in"
@@ -95,6 +103,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/foxy/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py"
+<<<<<<< HEAD
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install.cmake.in"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_append_install_code.cmake"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_directory.cmake"
@@ -103,6 +112,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/symlink_install/install.cmake"
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   "/opt/ros/foxy/share/ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in"
   "/opt/ros/foxy/share/ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target_append_uninstall_code.cmake"
   "/opt/ros/foxy/share/ament_cmake_cppcheck/cmake/ament_cmake_cppcheck-extras.cmake"
@@ -651,11 +662,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "ament_cmake_core/stamps/templates_2_cmake.py.stamp"
   "ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake"
+<<<<<<< HEAD
   "ament_cmake_symlink_install/ament_cmake_symlink_install.cmake"
   "ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake"
   "CTestConfiguration.ini"
   "ament_cmake_core/stamps/pythonpath.sh.in.stamp"
   "ament_cmake_environment_hooks/pythonpath.sh"
+=======
+  "CTestConfiguration.ini"
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   "ament_cmake_core/stamps/package.xml.stamp"
   "ament_cmake_core/stamps/package_xml_2_cmake.py.stamp"
   "ament_cmake_core/stamps/ament_prefix_path.sh.stamp"
@@ -667,7 +682,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_core/lab1_pkgConfig.cmake"
   "ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp"
   "ament_cmake_core/lab1_pkgConfig-version.cmake"
+<<<<<<< HEAD
   "ament_cmake_symlink_install_targets_0_.cmake"
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lab1_pkg"
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/lab1_pkg"
   "ament_cmake_index/share/ament_index/resource_index/packages/lab1_pkg"

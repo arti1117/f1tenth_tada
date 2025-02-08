@@ -1,0 +1,429 @@
+[0.000000] (-) TimerEvent: {}
+[0.000869] (lab1_pkg) JobQueued: {'identifier': 'lab1_pkg', 'dependencies': OrderedDict()}
+[0.001026] (lab1_pkg) JobStarted: {'identifier': 'lab1_pkg'}
+[0.105231] (-) TimerEvent: {}
+[0.149453] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'cmake'}
+[0.154418] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg', '-DCMAKE_INSTALL_PREFIX=/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg'], 'cwd': '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp//tmux-1000/default,3530,0'), ('USER', 'tada'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2686'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tada/f1tenth_ws/install/vesc_driver/lib:/home/tada/f1tenth_ws/install/vesc_ackermann/lib:/home/tada/f1tenth_ws/install/vesc_msgs/lib:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tada'), ('OLDPWD', '/home/tada/f1tenth_tada/labs/lab1_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2411'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tada/lab1_ws/src/install:/home/tada/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tada'), ('JOURNAL_STREAM', '7:61702'), ('_', '/home/tada/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tada'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tada/.local/bin:/opt/ros/foxy/bin:/home/tada/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/tada:@/tmp/.ICE-unix/2749,unix/tada:/tmp/.ICE-unix/2749'), ('INVOCATION_ID', '30f920aca2eb401fb5f3a084e9884e31'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e27de640_0157_4887_a48a_3a4f5d1bd49a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/home/tada/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tada/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/ackermann_mux:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.208045] (-) TimerEvent: {}
+[0.315347] (-) TimerEvent: {}
+[0.417536] (-) TimerEvent: {}
+[0.519242] (-) TimerEvent: {}
+[0.620829] (-) TimerEvent: {}
+[0.722450] (-) TimerEvent: {}
+[0.823368] (-) TimerEvent: {}
+[0.925068] (-) TimerEvent: {}
+[1.027142] (-) TimerEvent: {}
+[1.129238] (-) TimerEvent: {}
+[1.247544] (-) TimerEvent: {}
+[1.349132] (-) TimerEvent: {}
+[1.476299] (-) TimerEvent: {}
+[1.578366] (-) TimerEvent: {}
+[1.679914] (-) TimerEvent: {}
+[1.781980] (-) TimerEvent: {}
+[1.884512] (-) TimerEvent: {}
+[1.985435] (-) TimerEvent: {}
+[2.112163] (-) TimerEvent: {}
+[2.247813] (-) TimerEvent: {}
+[2.330934] (lab1_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[2.342856] (-) TimerEvent: {}
+[2.443794] (-) TimerEvent: {}
+[2.545217] (-) TimerEvent: {}
+[2.648426] (-) TimerEvent: {}
+[2.750305] (-) TimerEvent: {}
+[2.852560] (-) TimerEvent: {}
+[2.953998] (-) TimerEvent: {}
+[3.055928] (-) TimerEvent: {}
+[3.157696] (-) TimerEvent: {}
+[3.259083] (-) TimerEvent: {}
+[3.360701] (-) TimerEvent: {}
+[3.462487] (-) TimerEvent: {}
+[3.564220] (-) TimerEvent: {}
+[3.665862] (-) TimerEvent: {}
+[3.767562] (-) TimerEvent: {}
+[3.869357] (-) TimerEvent: {}
+[3.970853] (-) TimerEvent: {}
+[4.046179] (lab1_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[4.107597] (-) TimerEvent: {}
+[4.210007] (-) TimerEvent: {}
+[4.315385] (-) TimerEvent: {}
+[4.356286] (lab1_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[4.462833] (-) TimerEvent: {}
+[4.575886] (-) TimerEvent: {}
+[4.676682] (-) TimerEvent: {}
+[4.777493] (-) TimerEvent: {}
+[4.874091] (lab1_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[4.877690] (-) TimerEvent: {}
+[4.978430] (-) TimerEvent: {}
+[5.018525] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.078651] (-) TimerEvent: {}
+[5.179494] (-) TimerEvent: {}
+[5.283225] (-) TimerEvent: {}
+[5.384071] (-) TimerEvent: {}
+[5.486822] (-) TimerEvent: {}
+[5.588511] (-) TimerEvent: {}
+[5.690207] (-) TimerEvent: {}
+[5.791803] (-) TimerEvent: {}
+[5.893462] (-) TimerEvent: {}
+[5.964111] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.993704] (-) TimerEvent: {}
+[6.123452] (-) TimerEvent: {}
+[6.166117] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.169048] (lab1_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.223672] (-) TimerEvent: {}
+[6.320039] (lab1_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.323854] (-) TimerEvent: {}
+[6.424877] (-) TimerEvent: {}
+[6.526509] (-) TimerEvent: {}
+[6.628301] (-) TimerEvent: {}
+[6.729133] (-) TimerEvent: {}
+[6.830949] (-) TimerEvent: {}
+[6.932733] (-) TimerEvent: {}
+[7.003150] (lab1_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[7.008613] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.034054] (-) TimerEvent: {}
+[7.136579] (-) TimerEvent: {}
+[7.237406] (-) TimerEvent: {}
+[7.338778] (-) TimerEvent: {}
+[7.441537] (-) TimerEvent: {}
+[7.543162] (-) TimerEvent: {}
+[7.644845] (-) TimerEvent: {}
+[7.748726] (-) TimerEvent: {}
+[7.850435] (-) TimerEvent: {}
+[7.953475] (-) TimerEvent: {}
+[8.055143] (-) TimerEvent: {}
+[8.108836] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.155489] (-) TimerEvent: {}
+[8.189385] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.194819] (lab1_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.260127] (-) TimerEvent: {}
+[8.361075] (-) TimerEvent: {}
+[8.362863] (lab1_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[8.461274] (-) TimerEvent: {}
+[8.505905] (lab1_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[8.506795] (lab1_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.561488] (-) TimerEvent: {}
+[8.663085] (-) TimerEvent: {}
+[8.765022] (-) TimerEvent: {}
+[8.866626] (-) TimerEvent: {}
+[9.119825] (-) TimerEvent: {}
+[9.221442] (-) TimerEvent: {}
+[9.322304] (-) TimerEvent: {}
+[9.423126] (-) TimerEvent: {}
+[9.524004] (-) TimerEvent: {}
+[9.624837] (-) TimerEvent: {}
+[9.725654] (-) TimerEvent: {}
+[9.827038] (-) TimerEvent: {}
+[9.928368] (-) TimerEvent: {}
+[10.030118] (-) TimerEvent: {}
+[10.131012] (-) TimerEvent: {}
+[10.162732] (lab1_pkg) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[10.231277] (-) TimerEvent: {}
+[10.314756] (lab1_pkg) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[10.331523] (-) TimerEvent: {}
+[10.432404] (-) TimerEvent: {}
+[10.533727] (-) TimerEvent: {}
+[10.635101] (-) TimerEvent: {}
+[10.736657] (-) TimerEvent: {}
+[10.838650] (-) TimerEvent: {}
+[10.909533] (lab1_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.938861] (-) TimerEvent: {}
+[11.040550] (-) TimerEvent: {}
+[11.142292] (-) TimerEvent: {}
+[11.240126] (lab1_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[11.251031] (-) TimerEvent: {}
+[11.351800] (-) TimerEvent: {}
+[11.453100] (-) TimerEvent: {}
+[11.555301] (-) TimerEvent: {}
+[11.656182] (-) TimerEvent: {}
+[11.757882] (-) TimerEvent: {}
+[11.858837] (-) TimerEvent: {}
+[11.959810] (-) TimerEvent: {}
+[12.061886] (-) TimerEvent: {}
+[12.164992] (-) TimerEvent: {}
+[12.266055] (-) TimerEvent: {}
+[12.323639] (lab1_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[12.366271] (-) TimerEvent: {}
+[12.462879] (lab1_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[12.466417] (-) TimerEvent: {}
+[12.567161] (-) TimerEvent: {}
+[12.669264] (-) TimerEvent: {}
+[12.770172] (-) TimerEvent: {}
+[12.872483] (-) TimerEvent: {}
+[12.974206] (-) TimerEvent: {}
+[13.075659] (-) TimerEvent: {}
+[13.149527] (lab1_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.175867] (-) TimerEvent: {}
+[13.288474] (-) TimerEvent: {}
+[13.396207] (-) TimerEvent: {}
+[13.497550] (-) TimerEvent: {}
+[13.598392] (-) TimerEvent: {}
+[13.669266] (lab1_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[13.681114] (lab1_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.739509] (-) TimerEvent: {}
+[13.832246] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.839699] (-) TimerEvent: {}
+[13.953806] (-) TimerEvent: {}
+[14.068150] (-) TimerEvent: {}
+[14.169131] (-) TimerEvent: {}
+[14.271420] (-) TimerEvent: {}
+[14.372293] (-) TimerEvent: {}
+[14.409932] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[14.413670] (lab1_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[14.493856] (-) TimerEvent: {}
+[14.594708] (-) TimerEvent: {}
+[14.695631] (-) TimerEvent: {}
+[14.797232] (-) TimerEvent: {}
+[14.898196] (-) TimerEvent: {}
+[15.000101] (-) TimerEvent: {}
+[15.066595] (lab1_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[15.067890] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[15.100335] (-) TimerEvent: {}
+[15.202164] (-) TimerEvent: {}
+[15.332803] (-) TimerEvent: {}
+[15.433654] (-) TimerEvent: {}
+[15.534545] (-) TimerEvent: {}
+[15.635594] (-) TimerEvent: {}
+[15.684776] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[15.685660] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[15.735805] (-) TimerEvent: {}
+[15.837391] (-) TimerEvent: {}
+[15.938994] (-) TimerEvent: {}
+[16.039925] (-) TimerEvent: {}
+[16.089344] (lab1_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[16.097456] (lab1_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[16.140141] (-) TimerEvent: {}
+[16.241021] (-) TimerEvent: {}
+[16.342606] (-) TimerEvent: {}
+[16.443993] (-) TimerEvent: {}
+[16.546755] (-) TimerEvent: {}
+[16.649184] (-) TimerEvent: {}
+[16.750959] (-) TimerEvent: {}
+[16.853155] (-) TimerEvent: {}
+[16.919125] (lab1_pkg) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[16.953427] (-) TimerEvent: {}
+[17.055926] (-) TimerEvent: {}
+[17.061622] (lab1_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[17.156093] (-) TimerEvent: {}
+[17.257369] (-) TimerEvent: {}
+[17.359110] (-) TimerEvent: {}
+[17.487873] (-) TimerEvent: {}
+[17.588782] (-) TimerEvent: {}
+[17.690172] (-) TimerEvent: {}
+[17.790990] (-) TimerEvent: {}
+[17.893024] (-) TimerEvent: {}
+[17.994605] (-) TimerEvent: {}
+[18.086637] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[18.094819] (-) TimerEvent: {}
+[18.096757] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.097255] (lab1_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[18.098600] (lab1_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.103649] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[18.104077] (lab1_pkg) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[18.108585] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[18.112472] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.116724] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[18.127407] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.128027] (lab1_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.131653] (lab1_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.153662] (lab1_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.195048] (-) TimerEvent: {}
+[18.197869] (lab1_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[18.295315] (-) TimerEvent: {}
+[18.309156] (lab1_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg\n'}
+[18.341149] (lab1_pkg) CommandEnded: {'returncode': 0}
+[18.344808] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'build'}
+[18.348246] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg', '--', '-j2', '-l2'], 'cwd': '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp//tmux-1000/default,3530,0'), ('USER', 'tada'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2686'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tada/f1tenth_ws/install/vesc_driver/lib:/home/tada/f1tenth_ws/install/vesc_ackermann/lib:/home/tada/f1tenth_ws/install/vesc_msgs/lib:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tada'), ('OLDPWD', '/home/tada/f1tenth_tada/labs/lab1_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2411'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tada/lab1_ws/src/install:/home/tada/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tada'), ('JOURNAL_STREAM', '7:61702'), ('_', '/home/tada/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tada'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tada/.local/bin:/opt/ros/foxy/bin:/home/tada/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/tada:@/tmp/.ICE-unix/2749,unix/tada:/tmp/.ICE-unix/2749'), ('INVOCATION_ID', '30f920aca2eb401fb5f3a084e9884e31'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e27de640_0157_4887_a48a_3a4f5d1bd49a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/home/tada/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tada/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/ackermann_mux:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[18.395753] (-) TimerEvent: {}
+[18.497874] (-) TimerEvent: {}
+[18.572587] (lab1_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker\x1b[0m\n'}
+[18.598074] (-) TimerEvent: {}
+[18.699764] (-) TimerEvent: {}
+[18.801541] (-) TimerEvent: {}
+[18.903153] (-) TimerEvent: {}
+[19.004137] (-) TimerEvent: {}
+[19.105046] (-) TimerEvent: {}
+[19.123143] (lab1_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o\x1b[0m\n'}
+[19.205265] (-) TimerEvent: {}
+[19.306192] (-) TimerEvent: {}
+[19.407907] (-) TimerEvent: {}
+[19.508908] (-) TimerEvent: {}
+[19.611928] (-) TimerEvent: {}
+[19.713465] (-) TimerEvent: {}
+[19.814783] (-) TimerEvent: {}
+[19.916515] (-) TimerEvent: {}
+[20.018082] (-) TimerEvent: {}
+[20.119968] (-) TimerEvent: {}
+[20.221546] (-) TimerEvent: {}
+[20.323569] (-) TimerEvent: {}
+[20.425047] (-) TimerEvent: {}
+[20.555563] (-) TimerEvent: {}
+[20.768209] (-) TimerEvent: {}
+[20.869902] (-) TimerEvent: {}
+[20.971662] (-) TimerEvent: {}
+[21.074790] (-) TimerEvent: {}
+[21.176254] (-) TimerEvent: {}
+[21.278069] (-) TimerEvent: {}
+[21.380017] (-) TimerEvent: {}
+[21.482855] (-) TimerEvent: {}
+[21.585798] (-) TimerEvent: {}
+[21.687911] (-) TimerEvent: {}
+[21.790264] (-) TimerEvent: {}
+[21.892074] (-) TimerEvent: {}
+[21.993814] (-) TimerEvent: {}
+[22.095604] (-) TimerEvent: {}
+[22.197386] (-) TimerEvent: {}
+[22.299248] (-) TimerEvent: {}
+[22.402302] (-) TimerEvent: {}
+[22.504217] (-) TimerEvent: {}
+[22.606761] (-) TimerEvent: {}
+[22.709777] (-) TimerEvent: {}
+[22.812919] (-) TimerEvent: {}
+[22.915674] (-) TimerEvent: {}
+[23.017497] (-) TimerEvent: {}
+[23.119685] (-) TimerEvent: {}
+[23.221405] (-) TimerEvent: {}
+[23.323428] (-) TimerEvent: {}
+[23.424829] (-) TimerEvent: {}
+[23.526593] (-) TimerEvent: {}
+[23.630868] (-) TimerEvent: {}
+[23.732741] (-) TimerEvent: {}
+[23.833950] (-) TimerEvent: {}
+[23.935629] (-) TimerEvent: {}
+[24.037372] (-) TimerEvent: {}
+[24.139320] (-) TimerEvent: {}
+[24.241131] (-) TimerEvent: {}
+[24.343733] (-) TimerEvent: {}
+[24.445604] (-) TimerEvent: {}
+[24.547982] (-) TimerEvent: {}
+[24.650004] (-) TimerEvent: {}
+[24.753383] (-) TimerEvent: {}
+[24.855223] (-) TimerEvent: {}
+[24.972855] (-) TimerEvent: {}
+[25.102048] (-) TimerEvent: {}
+[25.203076] (-) TimerEvent: {}
+[25.304950] (-) TimerEvent: {}
+[25.406797] (-) TimerEvent: {}
+[25.509851] (-) TimerEvent: {}
+[25.611886] (-) TimerEvent: {}
+[25.855838] (-) TimerEvent: {}
+[25.956742] (-) TimerEvent: {}
+[26.057811] (-) TimerEvent: {}
+[26.159876] (-) TimerEvent: {}
+[26.261391] (-) TimerEvent: {}
+[26.362679] (-) TimerEvent: {}
+[26.465545] (-) TimerEvent: {}
+[26.567392] (-) TimerEvent: {}
+[26.669497] (-) TimerEvent: {}
+[26.771369] (-) TimerEvent: {}
+[26.873937] (-) TimerEvent: {}
+[26.976251] (-) TimerEvent: {}
+[27.078188] (-) TimerEvent: {}
+[27.180509] (-) TimerEvent: {}
+[27.283538] (-) TimerEvent: {}
+[27.386169] (-) TimerEvent: {}
+[27.488232] (-) TimerEvent: {}
+[27.591385] (-) TimerEvent: {}
+[27.693949] (-) TimerEvent: {}
+[27.795012] (-) TimerEvent: {}
+[27.896774] (-) TimerEvent: {}
+[27.998990] (-) TimerEvent: {}
+[28.100976] (-) TimerEvent: {}
+[28.202979] (-) TimerEvent: {}
+[28.304953] (-) TimerEvent: {}
+[28.407716] (-) TimerEvent: {}
+[28.510297] (-) TimerEvent: {}
+[28.612412] (-) TimerEvent: {}
+[28.716162] (-) TimerEvent: {}
+[28.819431] (-) TimerEvent: {}
+[28.920359] (-) TimerEvent: {}
+[29.022446] (-) TimerEvent: {}
+[29.125518] (-) TimerEvent: {}
+[29.228845] (-) TimerEvent: {}
+[29.332130] (-) TimerEvent: {}
+[29.434118] (-) TimerEvent: {}
+[29.536444] (-) TimerEvent: {}
+[29.638346] (-) TimerEvent: {}
+[29.740182] (-) TimerEvent: {}
+[29.841978] (-) TimerEvent: {}
+[29.943842] (-) TimerEvent: {}
+[30.067426] (-) TimerEvent: {}
+[30.168291] (-) TimerEvent: {}
+[30.270410] (-) TimerEvent: {}
+[30.372006] (-) TimerEvent: {}
+[30.474753] (-) TimerEvent: {}
+[30.577186] (-) TimerEvent: {}
+[30.678952] (-) TimerEvent: {}
+[30.854883] (-) TimerEvent: {}
+[30.957361] (-) TimerEvent: {}
+[31.059979] (-) TimerEvent: {}
+[31.162861] (-) TimerEvent: {}
+[31.265926] (-) TimerEvent: {}
+[31.367798] (-) TimerEvent: {}
+[31.469623] (-) TimerEvent: {}
+[31.571532] (-) TimerEvent: {}
+[31.673497] (-) TimerEvent: {}
+[31.776251] (-) TimerEvent: {}
+[31.879060] (-) TimerEvent: {}
+[31.981727] (-) TimerEvent: {}
+[32.083919] (-) TimerEvent: {}
+[32.185836] (-) TimerEvent: {}
+[32.287730] (-) TimerEvent: {}
+[32.389522] (-) TimerEvent: {}
+[32.491920] (-) TimerEvent: {}
+[32.593918] (-) TimerEvent: {}
+[32.698734] (-) TimerEvent: {}
+[32.801558] (-) TimerEvent: {}
+[32.903656] (-) TimerEvent: {}
+[33.005612] (-) TimerEvent: {}
+[33.107438] (-) TimerEvent: {}
+[33.208765] (-) TimerEvent: {}
+[33.310481] (-) TimerEvent: {}
+[33.412354] (-) TimerEvent: {}
+[33.513734] (-) TimerEvent: {}
+[33.615433] (-) TimerEvent: {}
+[33.717120] (-) TimerEvent: {}
+[33.818893] (-) TimerEvent: {}
+[33.851720] (lab1_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[33.918987] (-) TimerEvent: {}
+[34.020055] (-) TimerEvent: {}
+[34.120963] (-) TimerEvent: {}
+[34.222929] (-) TimerEvent: {}
+[34.324074] (-) TimerEvent: {}
+[34.425348] (-) TimerEvent: {}
+[34.527105] (-) TimerEvent: {}
+[34.629728] (-) TimerEvent: {}
+[34.731139] (-) TimerEvent: {}
+[34.832658] (-) TimerEvent: {}
+[34.935663] (-) TimerEvent: {}
+[35.037383] (-) TimerEvent: {}
+[35.139778] (-) TimerEvent: {}
+[35.162498] (lab1_pkg) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[35.239963] (-) TimerEvent: {}
+[35.315291] (lab1_pkg) CommandEnded: {'returncode': 0}
+[35.318320] (lab1_pkg) JobProgress: {'identifier': 'lab1_pkg', 'progress': 'install'}
+[35.340715] (-) TimerEvent: {}
+[35.393576] (lab1_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg'], 'cwd': '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp//tmux-1000/default,3530,0'), ('USER', 'tada'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2686'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/tada/f1tenth_ws/install/vesc_driver/lib:/home/tada/f1tenth_ws/install/vesc_ackermann/lib:/home/tada/f1tenth_ws/install/vesc_msgs/lib:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/tada'), ('OLDPWD', '/home/tada/f1tenth_tada/labs/lab1_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2411'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tada/lab1_ws/src/install:/home/tada/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'tada'), ('JOURNAL_STREAM', '7:61702'), ('_', '/home/tada/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tada'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tada/.local/bin:/opt/ros/foxy/bin:/home/tada/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/tada:@/tmp/.ICE-unix/2749,unix/tada:/tmp/.ICE-unix/2749'), ('INVOCATION_ID', '30f920aca2eb401fb5f3a084e9884e31'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e27de640_0157_4887_a48a_3a4f5d1bd49a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.77'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/home/tada/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tada/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/tada/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/home/tada/lab1_ws/src/install/lab1_pkg:/home/tada/f1tenth_ws/install/vesc:/home/tada/f1tenth_ws/install/vesc_driver:/home/tada/f1tenth_ws/install/vesc_ackermann:/home/tada/f1tenth_ws/install/vesc_msgs:/home/tada/f1tenth_ws/install/teleop_tools:/home/tada/f1tenth_ws/install/teleop_tools_msgs:/home/tada/f1tenth_ws/install/ackermann_mux:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[35.437168] (lab1_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.439326] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/talker\n'}
+[35.440592] (-) TimerEvent: {}
+[35.450549] (lab1_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/talker" to ""\n'}
+[35.452266] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/package_run_dependencies/lab1_pkg\n'}
+[35.454047] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/parent_prefix_path/lab1_pkg\n'}
+[35.456707] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.sh\n'}
+[35.461213] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.dsv\n'}
+[35.462917] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.sh\n'}
+[35.464449] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.dsv\n'}
+[35.465950] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.bash\n'}
+[35.467470] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.sh\n'}
+[35.468962] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.zsh\n'}
+[35.470367] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.dsv\n'}
+[35.471816] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.dsv\n'}
+[35.473882] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/packages/lab1_pkg\n'}
+[35.482410] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig.cmake\n'}
+[35.484010] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig-version.cmake\n'}
+[35.485624] (lab1_pkg) StdoutLine: {'line': b'-- Installing: /home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.xml\n'}
+[35.496231] (lab1_pkg) CommandEnded: {'returncode': 0}
+[35.540869] (-) TimerEvent: {}
+[35.641624] (-) TimerEvent: {}
+[35.702963] (lab1_pkg) JobEnded: {'identifier': 'lab1_pkg', 'rc': 0}
+[35.705709] (-) EventReactorShutdown: {}

@@ -2,7 +2,11 @@ set(_AMENT_PACKAGE_NAME "lab1_pkg")
 set(lab1_pkg_VERSION "0.0.1")
 set(lab1_pkg_MAINTAINER "JY <darkmoonz1004@gmail.com>")
 set(lab1_pkg_BUILD_DEPENDS "rclpy" "rclcpp" "std_msgs" "ackermann_msgs")
+<<<<<<< HEAD
 set(lab1_pkg_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
+=======
+set(lab1_pkg_BUILDTOOL_DEPENDS "ament_cmake")
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 set(lab1_pkg_BUILD_EXPORT_DEPENDS "rclpy" "rclcpp" "std_msgs" "ackermann_msgs")
 set(lab1_pkg_BUILDTOOL_EXPORT_DEPENDS )
 set(lab1_pkg_EXEC_DEPENDS "rclpy" "rclcpp" "std_msgs" "ackermann_msgs")

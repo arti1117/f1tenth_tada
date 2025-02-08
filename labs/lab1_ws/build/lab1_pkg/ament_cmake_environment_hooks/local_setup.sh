@@ -2,7 +2,11 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
+<<<<<<< HEAD
 : ${AMENT_CURRENT_PREFIX:="/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg"}
+=======
+: ${AMENT_CURRENT_PREFIX:="/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg"}
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \
@@ -102,7 +106,10 @@ fi
 # list all environment hooks of this package
 ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/lab1_pkg/environment/ament_prefix_path.sh"
 ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/lab1_pkg/environment/path.sh"
+<<<<<<< HEAD
 ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/lab1_pkg/environment/pythonpath.sh"
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 
 # source all shell-specific environment hooks of this package
 # if not returning them

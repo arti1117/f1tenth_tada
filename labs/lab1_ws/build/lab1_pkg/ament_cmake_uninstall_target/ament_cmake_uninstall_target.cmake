@@ -2,7 +2,11 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
+<<<<<<< HEAD
   set(install_space "/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg")
+=======
+  set(install_space "/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg")
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +33,11 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
+<<<<<<< HEAD
 set(install_manifest "/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/install_manifest.txt")
+=======
+set(install_manifest "/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/install_manifest.txt")
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -55,6 +63,9 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
+<<<<<<< HEAD
 
 # uninstall files installed using the symlink install functions
 include("/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2

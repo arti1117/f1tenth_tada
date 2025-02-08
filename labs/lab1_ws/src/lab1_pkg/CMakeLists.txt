@@ -17,7 +17,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+<<<<<<< HEAD
 find_package(ament_cmake_python REQUIRED)
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 find_package(rclpy REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -33,6 +36,7 @@ install(TARGETS
 	DESTINATION lib/${PROJECT_NAME}
 )
 
+<<<<<<< HEAD
 # Install Python modules
 ament_python_install_package(${PROJECT_NAME})
 
@@ -44,6 +48,8 @@ install(PROGRAMS
 
 
 
+=======
+>>>>>>> a4dec3f819f88a1ae4320c660fed05550473e2b2
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
