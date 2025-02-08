@@ -1,0 +1,24 @@
+[100%] Built target talker
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/talker
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/pythonpath.sh
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/python3.8/site-packages/lab1_pkg/__init__.py
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/relay.py
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/package_run_dependencies/lab1_pkg
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/parent_prefix_path/lab1_pkg
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.sh
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.dsv
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.bash
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.sh
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.zsh
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.dsv
+-- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.dsv
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/packages/lab1_pkg
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig.cmake
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig-version.cmake
+-- Up-to-date symlink: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.xml
+Listing '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/python3.8/site-packages/lab1_pkg'...

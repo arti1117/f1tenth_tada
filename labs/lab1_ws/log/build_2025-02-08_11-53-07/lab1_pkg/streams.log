@@ -1,0 +1,87 @@
+[0.102s] Invoking command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
+[0.634s] -- The C compiler identification is GNU 9.4.0
+[1.174s] -- The CXX compiler identification is GNU 9.4.0
+[1.219s] -- Check for working C compiler: /usr/bin/cc
+[1.828s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.837s] -- Detecting C compiler ABI info
+[2.385s] -- Detecting C compiler ABI info - done
+[2.461s] -- Detecting C compile features
+[2.464s] -- Detecting C compile features - done
+[2.479s] -- Check for working CXX compiler: /usr/bin/c++
+[3.118s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.127s] -- Detecting CXX compiler ABI info
+[3.761s] -- Detecting CXX compiler ABI info - done
+[3.831s] -- Detecting CXX compile features
+[3.833s] -- Detecting CXX compile features - done
+[3.850s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.051s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.052s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.690s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.854s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[5.864s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.241s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.906s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.088s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.733s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.126s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.132s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.139s] -- Looking for pthread.h
+[8.889s] -- Looking for pthread.h - found
+[8.892s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.473s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.476s] -- Looking for pthread_create in pthreads
+[10.045s] -- Looking for pthread_create in pthreads - not found
+[10.047s] -- Looking for pthread_create in pthread
+[10.729s] -- Looking for pthread_create in pthread - found
+[10.741s] -- Found Threads: TRUE  
+[11.706s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[13.753s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.369s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.378s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.380s] -- Configured cppcheck include dirs: 
+[14.381s] -- Configured cppcheck exclude dirs and/or files: 
+[14.393s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.394s] -- Configured cpplint exclude dirs and/or files: 
+[14.404s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.408s] -- Added test 'lint_cmake' to check CMake code style
+[14.413s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[14.425s] -- Added test 'uncrustify' to check C / C++ code style
+[14.425s] -- Configured uncrustify additional arguments: 
+[14.436s] -- Added test 'xmllint' to check XML markup files
+[14.479s] -- Configuring done
+[14.572s] -- Generating done
+[14.600s] -- Build files have been written to: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+[14.666s] Invoked command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
+[14.696s] Invoking command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j6 -l6
+[15.064s] [35m[1mScanning dependencies of target talker[0m
+[15.604s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[34.560s] [100%] [32m[1mLinking CXX executable talker[0m
+[35.478s] [100%] Built target talker
+[35.554s] Invoked command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j6 -l6
+[35.641s] Invoking command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+[35.698s] -- Install configuration: ""
+[35.701s] -- Execute custom install script
+[35.705s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/talker
+[35.776s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/pythonpath.sh
+[35.837s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/pythonpath.dsv
+[35.899s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/python3.8/site-packages/lab1_pkg/__init__.py
+[35.970s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/lab1_pkg/relay.py
+[36.042s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/package_run_dependencies/lab1_pkg
+[36.114s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/parent_prefix_path/lab1_pkg
+[36.176s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.sh
+[36.243s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/ament_prefix_path.dsv
+[36.302s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.sh
+[36.369s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/environment/path.dsv
+[36.433s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.bash
+[36.509s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.sh
+[36.568s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.zsh
+[36.639s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/local_setup.dsv
+[36.701s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.dsv
+[36.763s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/ament_index/resource_index/packages/lab1_pkg
+[36.822s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig.cmake
+[36.884s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/cmake/lab1_pkgConfig-version.cmake
+[36.946s] -- Symlinking: /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/share/lab1_pkg/package.xml
+[37.203s] Listing '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/python3.8/site-packages/lab1_pkg'...
+[37.204s] Compiling '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/install/lab1_pkg/lib/python3.8/site-packages/lab1_pkg/__init__.py'...
+[37.240s] Invoked command in '/home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dawgs_nx/dawgs_f1tenth/others/ros_tutorial/src/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
