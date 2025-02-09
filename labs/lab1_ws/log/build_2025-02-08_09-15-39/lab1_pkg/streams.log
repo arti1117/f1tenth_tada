@@ -1,7 +1,0 @@
-[0.078s] Invoking command in '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
-[0.134s] CMake Error at CMakeLists.txt:30:
-[0.135s]   Parse error.  Function missing ending ")".  End of file reached.
-[0.135s] 
-[0.137s] 
-[0.137s] -- Configuring incomplete, errors occurred!
-[0.147s] Invoked command in '/home/tada/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tada/f1tenth_ws/install/f1tenth_stack:/home/tada/f1tenth_ws/install/joy_teleop:/home/tada/f1tenth_ws/install/mouse_teleop:/home/tada/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake /home/tada/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
