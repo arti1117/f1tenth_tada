@@ -29,20 +29,18 @@ ament_target_dependencies(talker rclcpp std_msgs ackermann_msgs)
 
 # Install C++ executables
 install(TARGETS
-	talker
-	DESTINATION lib/${PROJECT_NAME}
-)
-
-# Install Python modules
-ament_python_install_package(${PROJECT_NAME})
-
-# Install python executables
-install(PROGRAMS
-  scripts/relay.py
+  talker
   DESTINATION lib/${PROJECT_NAME}
 )
 
+# Enable Python Support
+ament_python_install_package(${PROJECT_NAME})
 
+# Install Python scripts
+install(PROGRAMS
+  lab1_pkg/relay.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

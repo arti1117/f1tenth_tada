@@ -1,0 +1,100 @@
+[1.845s] DEBUG:colcon:Command line arguments: ['/home/tada/.local/bin/colcon', 'build', '--packages-select', 'lab1_pkg']
+[1.846s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff869314f0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['lab1_pkg'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff869314f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8683e5e0>)
+[2.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.385s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src'
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.480s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.480s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.480s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.481s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.481s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extension 'ignore'
+[2.482s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extension 'ignore_ament_install'
+[2.482s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extensions ['colcon_pkg']
+[2.482s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extension 'colcon_pkg'
+[2.482s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extensions ['colcon_meta']
+[2.482s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extension 'colcon_meta'
+[2.483s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extensions ['ros']
+[2.483s] Level 1:colcon.colcon_core.package_identification:_identify(lab1_pkg) by extension 'ros'
+[2.496s] DEBUG:colcon.colcon_core.package_identification:Package 'lab1_pkg' with type 'ros.ament_cmake' and name 'lab1_pkg'
+[2.497s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.497s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.498s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.727s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_args' from command line to 'None'
+[2.727s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_target' from command line to 'None'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.728s] Level 5:colcon.colcon_core.verb:set package 'lab1_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.729s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg', 'merge_install': False, 'path': '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.729s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.734s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg' with build type 'ament_cmake'
+[2.735s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg'
+[2.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg
+[9.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg' returned '1': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg
+[9.838s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_pkg)
+[9.854s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg' for CMake module files
+[9.857s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg' for CMake config files
+[9.859s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/bin'
+[9.859s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/lib/pkgconfig/lab1_pkg.pc'
+[9.863s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/lib/python3.8/site-packages'
+[9.864s] Level 1:colcon.colcon_core.environment:checking '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/bin'
+[9.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/lab1_pkg/package.ps1'
+[9.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/lab1_pkg/package.dsv'
+[9.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/lab1_pkg/package.sh'
+[9.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/lab1_pkg/package.bash'
+[9.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/lab1_pkg/package.zsh'
+[9.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg/share/colcon-core/packages/lab1_pkg)
+[9.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.904s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.904s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[9.905s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.937s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.938s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.938s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.045s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/local_setup.ps1'
+[10.055s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/_local_setup_util_ps1.py'
+[10.082s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/setup.ps1'
+[10.088s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/local_setup.sh'
+[10.104s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/_local_setup_util_sh.py'
+[10.108s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/setup.sh'
+[10.133s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/local_setup.bash'
+[10.136s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/setup.bash'
+[10.139s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/local_setup.zsh'
+[10.142s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/setup.zsh'

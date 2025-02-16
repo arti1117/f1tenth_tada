@@ -1,0 +1,4 @@
+Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j4 -l4
+Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j4 -l4
+Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg

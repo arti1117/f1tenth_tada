@@ -1,0 +1,35 @@
+[0.053s] Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg
+[1.707s] -- The C compiler identification is GNU 9.4.0
+[3.512s] -- The CXX compiler identification is GNU 9.4.0
+[3.707s] -- Check for working C compiler: /usr/bin/cc
+[4.359s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.505s] -- Detecting C compiler ABI info
+[5.423s] -- Detecting C compiler ABI info - done
+[5.644s] -- Detecting C compile features
+[5.646s] -- Detecting C compile features - done
+[5.665s] -- Check for working CXX compiler: /usr/bin/c++
+[6.125s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.138s] -- Detecting CXX compiler ABI info
+[6.727s] -- Detecting CXX compiler ABI info - done
+[6.802s] -- Detecting CXX compile features
+[6.807s] -- Detecting CXX compile features - done
+[7.002s] CMake Error at CMakeLists.txt:19 (find_package):
+[7.002s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[7.002s]   has asked CMake to find a package configuration file provided by
+[7.003s]   "ament_cmake", but CMake did not find one.
+[7.003s] 
+[7.003s]   Could not find a package configuration file provided by "ament_cmake" with
+[7.004s]   any of the following names:
+[7.004s] 
+[7.005s]     ament_cmakeConfig.cmake
+[7.006s]     ament_cmake-config.cmake
+[7.006s] 
+[7.007s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[7.007s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[7.007s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[7.008s]   has been installed.
+[7.008s] 
+[7.009s] 
+[7.009s] -- Configuring incomplete, errors occurred!
+[7.009s] See also "/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg/CMakeFiles/CMakeOutput.log".
+[7.024s] Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg' returned '1': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg

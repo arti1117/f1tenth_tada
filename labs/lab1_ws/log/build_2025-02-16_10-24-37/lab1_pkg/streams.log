@@ -1,0 +1,39 @@
+[0.052s] Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
+[0.172s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.266s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.040s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[1.042s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.213s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.908s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.914s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.470s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[2.740s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.203s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.211s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.212s] -- Configured cppcheck include dirs: 
+[3.212s] -- Configured cppcheck exclude dirs and/or files: 
+[3.218s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.218s] -- Configured cpplint exclude dirs and/or files: 
+[3.221s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.226s] -- Added test 'lint_cmake' to check CMake code style
+[3.229s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.236s] -- Added test 'uncrustify' to check C / C++ code style
+[3.237s] -- Configured uncrustify additional arguments: 
+[3.240s] -- Added test 'xmllint' to check XML markup files
+[3.260s] -- Configuring done
+[3.322s] -- Generating done
+[3.479s] -- Build files have been written to: /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg
+[3.503s] Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/install/lab1_pkg
+[3.511s] Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j4 -l4
+[3.701s] [35m[1mScanning dependencies of target talker[0m
+[4.314s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[11.020s] [01m[K/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/src/talker.cpp:[m[K In constructor ‘[01m[KTalker::Talker()[m[K’:
+[11.021s] [01m[K/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/src/talker.cpp:8:78:[m[K [01;31m[Kerror: [m[K‘[01m[KMyCppNode[m[K’ has not been declared
+[11.021s]     8 |         timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&[01;31m[KMyCppNode[m[K::publish_message, this));
+[11.021s]       |                                                                              [01;31m[K^~~~~~~~~[m[K
+[14.448s] make[2]: *** [CMakeFiles/talker.dir/build.make:63: CMakeFiles/talker.dir/src/talker.cpp.o] Error 1
+[14.453s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/talker.dir/all] Error 2
+[14.455s] make: *** [Makefile:141: all] Error 2
+[14.473s] Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tada/Repository/f1tenth_tada/labs/lab1_ws/build/lab1_pkg -- -j4 -l4
