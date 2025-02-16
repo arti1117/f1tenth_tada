@@ -1,22 +1,44 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
 
 class Talker : public rclcpp::Node {
 public:
     Talker() : Node("talker") {
-        publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
-        timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&Talker::publish_message, this));
+        // Declare and get parameters
+        this->declare_parameter("v", 0.0);
+        this->declare_parameter("d", 0.0);
+
+        v_ = this->get_parameter("v").as_double();
+        d_ = this->get_parameter("d").as_double();
+
+        publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("drive", 10);
+
+        while (rclcpp::ok()) {
+            publish_ackermann_drive();
+            rclcpp::spin_some(this->get_node_base_interface());
+        }
     }
 
 private:
-    void publish_message() {
-        auto message = std_msgs::msg::String();
-        message.data = "Hello from C++ Node!";
-        publisher_->publish(message);
+    void publish_ackermann_drive() {
+        // Get latest parameter values
+        v_ = this->get_parameter("v").as_double();
+        d_ = this->get_parameter("d").as_double();
+
+        // Create and publish message
+        auto msg = ackermann_msgs::msg::AckermannDriveStamped();
+        msg.drive.speed = v_;
+        msg.drive.steering_angle = d_;
+        publisher_->publish(msg);
+
+        RCLCPP_INFO(this->get_logger(), "Published: speed=%.2f, steeering_angle=%.2f", v_, d_);
     }
 
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-    rclcpp::TimerBase::SharedPtr timer_;
+    double v_;
+    double d_;
+
+    rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
 };
 
 int main(int argc, char *argv[]) {
