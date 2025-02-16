@@ -21,3 +21,6 @@ def main(args=None):
     node = Relay()
     rclpy.spin(node)
     rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
