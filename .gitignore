@@ -26,9 +26,9 @@
 !.vscode/settings.json
 
 # colcon/CMake output
-build
-install
-log
+build/
+install/
+log/
 
 # gitignore for c
 # Prerequisites

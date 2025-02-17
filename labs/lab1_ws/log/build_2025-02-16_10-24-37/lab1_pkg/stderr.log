@@ -1,7 +1,0 @@
-[01m[K/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/src/talker.cpp:[m[K In constructor ‘[01m[KTalker::Talker()[m[K’:
-[01m[K/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg/src/talker.cpp:8:78:[m[K [01;31m[Kerror: [m[K‘[01m[KMyCppNode[m[K’ has not been declared
-    8 |         timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&[01;31m[KMyCppNode[m[K::publish_message, this));
-      |                                                                              [01;31m[K^~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/talker.dir/build.make:63: CMakeFiles/talker.dir/src/talker.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/talker.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

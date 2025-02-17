@@ -1,2 +1,0 @@
-Invoking command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg
-Invoked command in '/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/build/lab1_pkg' returned '1': /usr/bin/cmake /home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/lab1_pkg -DCMAKE_INSTALL_PREFIX=/home/tada/Repository/f1tenth_tada/labs/lab1_ws/src/install/lab1_pkg
