@@ -77,7 +77,7 @@ class SafetyNode(Node):
         self.get_logger().info(f'Closest Obstacle Distance: {self.closest_obstacle_distance:.2f} meters')
 
         # Compute range rate using velocity projection
-        range_rates = self.current_speed * np.cos(angles)
+        range_rates = self.speed * np.cos(angles)
 
         # Compute range rate using finite difference if previous scan is available
         if self.prev_ranges is not None and self.prev_scan_time is not None:
