@@ -17,19 +17,31 @@ class WallFollow(Node):
         lidarscan_topic = '/scan'
         drive_topic = '/drive'
 
-        # TODO: create subscribers and publishers
+        self.scan_subscription = self.create_subscription(
+            LaserScan,
+            lidarscan_topic,
+            self.scan_callback,
+            10
+        )
 
-        # TODO: set PID gains
-        # self.kp = 
-        # self.kd = 
-        # self.ki = 
+        self.drive_publisher = self.create_publisher(
+            AckermannDriveStamped,
+            drive_topic,
+            10
+        )
 
-        # TODO: store history
-        # self.integral = 
-        # self.prev_error = 
-        # self.error = 
+        self.kp = 1.
+        self.kd = 1.
+        self.ki = 1.
 
-        # TODO: store any necessary values you think you'll need
+        self.integral = 0.0
+        self.prev_error = None
+        self.error = None
+
+        self.prev_ranges = None
+        self.prev_scan_time = None
+
+        self.get_logger().info("WallFollow Node Initialized")
 
     def get_range(self, range_data, angle):
         """
@@ -43,7 +55,7 @@ class WallFollow(Node):
             range: range measurement in meters at the given angle
 
         """
-
+        alpha = np.arctan()
         #TODO: implement
         return 0.0
 
@@ -60,7 +72,8 @@ class WallFollow(Node):
         """
 
         #TODO:implement
-        return 0.0
+        # Dt+1 - Dt
+        return 
 
     def pid_control(self, error, velocity):
         """
@@ -73,10 +86,18 @@ class WallFollow(Node):
         Returns:
             None
         """
-        angle = 0.0
+        angle = self.kp * error + self.ki + self.kd
         # TODO: Use kp, ki & kd to implement a PID controller
+
+
         drive_msg = AckermannDriveStamped()
+        drive_msg.drive.speed = 0
+        drive_msg.drive.steering_angle = angle
+        
         # TODO: fill in drive message and publish
+        self.drive_publisher.publish(drive_msg)
+
+        self.get_logger().info(f"Published: Speed=, Steering Angle=")
 
     def scan_callback(self, msg):
         """
@@ -88,22 +109,36 @@ class WallFollow(Node):
         Returns:
             None
         """
-        error = 0.0 # TODO: replace with error calculated by get_error()
+        ranges = np.array(msg.ranges)
+        ranges = np.where(np.isfinite(ranges), ranges, float('inf')) # Handle NaNs and Infs
+
+        angles = np.linspace(msg.angle_min, msg.angle_max, len(ranges))
+
+
+        error = self.get_error(ranges, None) # TODO: replace with error calculated by get_error()
         velocity = 0.0 # TODO: calculate desired car velocity based on error
         self.pid_control(error, velocity) # TODO: actuate the car with PID
+
+        # Store current scan for next iteration
+        self.prev_ranges = ranges
+        self.prev_scan_time = scan_msg.header.stamp.sec + scan_msg.header.stamp.nanosec * 1e-9
+
 
 
 def main(args=None):
     rclpy.init(args=args)
-    print("WallFollow Initialized")
     wall_follow_node = WallFollow()
-    rclpy.spin(wall_follow_node)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    wall_follow_node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(wall_follow_node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        # Destroy the node explicitly
+        # (optional - otherwise it will be done automatically
+        # when the garbage collector destroys the node object)
+        wall_follow_node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':

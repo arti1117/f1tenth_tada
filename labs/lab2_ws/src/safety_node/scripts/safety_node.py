@@ -24,7 +24,7 @@ class SafetyNode(Node):
 
         NOTE that the x component of the linear velocity in odom is the speed
         """
-        self.publisher_ = self.create_publisher(
+        self.drive_publisher = self.create_publisher(
             AckermannDriveStamped,
             '/drive',
             10
