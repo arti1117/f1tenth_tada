@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+import time
 import rclpy
 from rclpy.node import Node
 
@@ -7,8 +8,9 @@ import numpy as np
 from sensor_msgs.msg import LaserScan
 from ackermann_msgs.msg import AckermannDriveStamped
 
+
 class WallFollow(Node):
-    """ 
+    """
     Implement Wall Following on the car
     """
     def __init__(self):
@@ -17,31 +19,31 @@ class WallFollow(Node):
         lidarscan_topic = '/scan'
         drive_topic = '/drive'
 
-        self.scan_subscription = self.create_subscription(
-            LaserScan,
-            lidarscan_topic,
-            self.scan_callback,
-            10
-        )
+        # Create subscribers and publishers
+        self.subscription = self.create_subscription(
+            LaserScan, lidarscan_topic, self.scan_callback, 10)
+        self.publisher = self.create_publisher(
+            AckermannDriveStamped, drive_topic, 10)
 
-        self.drive_publisher = self.create_publisher(
-            AckermannDriveStamped,
-            drive_topic,
-            10
-        )
+        # Set PID gains
+        self.kp = 0.5
+        self.ki = 0.01
+        self.kd = 0.1
 
-        self.kp = 1.
-        self.kd = 1.
-        self.ki = 1.
-
+        # Store history
         self.integral = 0.0
-        self.prev_error = None
-        self.error = None
+        self.prev_error = 0.0
+        self.prev_time = time.time()
 
-        self.prev_ranges = None
-        self.prev_scan_time = None
+        # Store any necessary values
+        self.desired_distance = 1.0  # Desired distance to the wall
+        self.angle_a = 45  # Angle for first LiDAR point
+        self.angle_b = 90  # Angle for second LiDAR point
+        self.max_speed = 2.0  # Maximum speed
+        self.min_speed = 0.5  # Minimum speed
 
         self.get_logger().info("WallFollow Node Initialized")
+
 
     def get_range(self, range_data, angle):
         """
@@ -52,12 +54,14 @@ class WallFollow(Node):
             angle: between angle_min and angle_max of the LiDAR
 
         Returns:
-            range: range measurement in meters at the given angle
-
+            range: range measurement in meters at the given angle (meters)
         """
-        alpha = np.arctan()
-        #TODO: implement
+        angle_index = int((np.radians(angle) - range_data.angle_min) / range_data.angle_increment)
+        if 0 <= angle_index < len(range_data.ranges):
+            range_value = range_data.ranges[angle_index]
+            return range_value if np.isfinite(range_value) else 0.0
         return 0.0
+
 
     def get_error(self, range_data, dist):
         """
@@ -70,10 +74,17 @@ class WallFollow(Node):
         Returns:
             error: calculated error
         """
+        dist_a = self.get_range(range_data, self.angle_a)
+        dist_b = self.get_range(range_data, self.angle_b)
 
-        #TODO:implement
-        # Dt+1 - Dt
-        return 
+        theta = np.radians(self.angle_a - self.angle_b)
+        if dist_b > 0:
+            alpha = np.arctan((dist_a * np.cos(theta) - dist_b) / (dist_a * np.sin(theta)))
+            Dt = dist_b * np.cos(alpha)
+            error = dist - Dt
+            return error
+        return 0.0
+
 
     def pid_control(self, error, velocity):
         """
@@ -86,18 +97,26 @@ class WallFollow(Node):
         Returns:
             None
         """
-        angle = self.kp * error + self.ki + self.kd
-        # TODO: Use kp, ki & kd to implement a PID controller
+        current_time = time.time()
+        dt = current_time - self.prev_time if self.prev_time else 1e-6
+        self.prev_time = current_time
 
+        self.integral += error * dt
+        derivative = (error - self.prev_error) / dt if dt > 0 else 0.0
+        self.prev_error = error
+
+        angle = self.kp * error + self.ki * self.integral + self.kd * derivative
+        angle = np.clip(angle, -0.3, 0.3)
+
+        speed = max(self.min_speed, min(velocity, self.max_speed - abs(angle) * 5)) # Adjust speed based on angle
 
         drive_msg = AckermannDriveStamped()
-        drive_msg.drive.speed = 0
+        drive_msg.drive.speed = speed
         drive_msg.drive.steering_angle = angle
-        
-        # TODO: fill in drive message and publish
-        self.drive_publisher.publish(drive_msg)
+        self.publisher.publish(drive_msg)
 
-        self.get_logger().info(f"Published: Speed=, Steering Angle=")
+        self.get_logger().info(f"Published: Speed={speed:.2f}, Steering Anglel={angle:.2f}")
+
 
     def scan_callback(self, msg):
         """
@@ -109,20 +128,9 @@ class WallFollow(Node):
         Returns:
             None
         """
-        ranges = np.array(msg.ranges)
-        ranges = np.where(np.isfinite(ranges), ranges, float('inf')) # Handle NaNs and Infs
-
-        angles = np.linspace(msg.angle_min, msg.angle_max, len(ranges))
-
-
-        error = self.get_error(ranges, None) # TODO: replace with error calculated by get_error()
-        velocity = 0.0 # TODO: calculate desired car velocity based on error
-        self.pid_control(error, velocity) # TODO: actuate the car with PID
-
-        # Store current scan for next iteration
-        self.prev_ranges = ranges
-        self.prev_scan_time = scan_msg.header.stamp.sec + scan_msg.header.stamp.nanosec * 1e-9
-
+        error = self.get_error(msg, self.desired_distance)
+        velocity = max(self.min_speed, self.max_speed - abs(error) * 2)  # Adjust velocity based on error
+        self.pid_control(error, velocity)
 
 
 def main(args=None):
