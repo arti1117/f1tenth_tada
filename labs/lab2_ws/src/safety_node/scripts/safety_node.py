@@ -37,7 +37,7 @@ class SafetyNode(Node):
             10
         )
 
-        self.scan_subscription = self.create_subscriptin(
+        self.scan_subscription = self.create_subscription(
             LaserScan,
             '/scan',
             self.scan_callback,

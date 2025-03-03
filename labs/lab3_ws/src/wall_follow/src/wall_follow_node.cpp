@@ -2,6 +2,7 @@
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
+#include <algorithm>
 #include <chrono>
 #include <cmath>
 #include <vector>
@@ -12,8 +13,8 @@ public:
     WallFollow() : Node("wall_follow_node")
     {
         // TODO: create ROS subscribers and publishers
-        publisher_ = this->create_publisherd publishers::msg::AckermannDriveStamped(lidarscan_topic_, 10);
-        subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(drive_topic_, std::bind(&WallFollow::scan_callback, this, std::placeholders::_1));
+        publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>(lidarscan_topic_, 10);
+        subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(drive_topic_, 10, std::bind(&WallFollow::scan_callback, this, std::placeholders::_1));
 
         // PID gains
         kp_ = 0.7;
@@ -22,7 +23,7 @@ public:
 
         // Initialize error values
         prev_error_ = 0.0;
-        integral_error_ = 0.0;
+        integral_ = 0.0;
         prev_time_ = this->now();
 
         // Car parameters
@@ -34,6 +35,7 @@ public:
 
         angle_min_ = 0.0;
         angle_increment_ = 0.0;
+        num_ranges_ = 0.0;
 
         RCLCPP_INFO(this->get_logger(), "Wall Follow node has been started");
     }
@@ -47,13 +49,13 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
 
     double kp_, ki_, kd_;
-    double prev_error_, integral_error_;
+    double prev_error_, integral_;
 
     rclcpp::Time prev_time_;
     double desired_distance_;
     double angle_a_, angle_b_;
     double max_speed_, min_speed_;
-    double angle_min_, angle_increment_;
+    double angle_min_, angle_increment_, num_ranges_;
 
     double get_radians(double degrees)
     {
@@ -78,7 +80,7 @@ private:
         }
 
         int angle_index = static_cast<int>((get_radians(angle) - angle_min_) / angle_increment_);
-        if 0 <= angle_index and angle_index < (sizeof(range_data) / sizeof(float))
+        if (0 <= angle_index and angle_index < num_ranges_)
         {
             double range_value = range_data[angle_index];
             return std::isfinite(range_value) ? range_value : std::numeric_limits<double>::infinity();
@@ -113,6 +115,10 @@ private:
         return 0.0;
     }
 
+    double clip(double n, double lower, double upper) {
+        return std::max(lower, std::min(n, upper));
+    }
+
     void pid_control(double error, double velocity)
     {
         /*
@@ -133,10 +139,10 @@ private:
         double derivative = (error - prev_error_) / dt;
         prev_error_ = error;
 
-        double angle = kp * error + ki * integral_ + kd * derivative;
-        angle = clamp(angle, -0.3, 0.3);
+        double angle = kp_ * error + ki_ * integral_ + kd_ * derivative;
+        angle = clip(angle, -0.3, 0.3);
 
-        double speed = max(min_speed_, min(velocity, max_speed_ - abs(angle) * 5))
+        double speed = std::max(min_speed_, std::min(velocity, max_speed_ - std::abs(angle) * 5));
 
         auto drive_msg = ackermann_msgs::msg::AckermannDriveStamped();
         drive_msg.drive.steering_angle = angle;
@@ -157,9 +163,11 @@ private:
         */
         angle_min_ = scan_msg->angle_min;
         angle_increment_ = scan_msg->angle_increment;
+        num_ranges_ = scan_msg->ranges.size();
+        auto range_data = scan_msg->ranges;
 
-        double error = get_error(scan_msg, desired_distance_);
-        double velocity = max(min_speed_, max_speed_ - 0.1 * abs(error) * 2);
+        double error = get_error(&range_data[0], desired_distance_);
+        double velocity = std::max(min_speed_, max_speed_ - 0.1 * abs(error) * 2);
         pid_control(error, velocity);
     }
 };
