@@ -59,7 +59,7 @@ class WallFollow(Node):
         angle_index = int((np.radians(angle) - range_data.angle_min) / range_data.angle_increment)
         if 0 <= angle_index < len(range_data.ranges):
             range_value = range_data.ranges[angle_index]
-            return range_value if np.isfinite(range_value) else 0.0
+            return range_value if np.isfinite(range_value) else float('inf')
         return 0.0
 
 
@@ -106,13 +106,11 @@ class WallFollow(Node):
         self.prev_error = error
 
         angle = self.kp * error + self.ki * self.integral + self.kd * derivative
-        angle = np.clip(angle, -0.3, 0.3)
-
         speed = max(self.min_speed, min(velocity, self.max_speed - abs(angle) * 5)) # Adjust speed based on angle
 
         drive_msg = AckermannDriveStamped()
-        drive_msg.drive.speed = speed
         drive_msg.drive.steering_angle = angle
+        drive_msg.drive.speed = speed
         self.publisher.publish(drive_msg)
 
         self.get_logger().info(f"Published: Speed={speed:.2f}, Steering Anglel={angle:.2f}")
