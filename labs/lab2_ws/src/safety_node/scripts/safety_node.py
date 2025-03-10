@@ -70,18 +70,21 @@ class SafetyNode(Node):
         ranges = np.array(scan_msg.ranges)
         ranges = np.where(np.isfinite(ranges), ranges, float('inf')) # Handle NaNs and Infs
 
-        angles = np.linspace(scan_msg.angle_min, scan_msg.angle_max, len(ranges))
-
         self.closest_obstacle_distance = np.min(ranges) # Find the minimum range value
 
+        self.get_logger().info(f'Furthest Obstacle Distance: {np.max(ranges):.2f} meters')
         self.get_logger().info(f'Closest Obstacle Distance: {self.closest_obstacle_distance:.2f} meters')
+
+        # angles = np.linspace(scan_msg.angle_min, scan_msg.angle_max, len(ranges))
+        angles = np.arange(scan_msg.angle_min, scan_msg.angle_max, scan_msg.angle_increment)
 
         # Compute range rate using velocity projection
         range_rates = self.speed * np.cos(angles)
+        scan_time = scan_msg.header.stamp.sec + scan_msg.header.stamp.nanosec * 1e-9
 
         # Compute range rate using finite difference if previous scan is available
         if self.prev_ranges is not None and self.prev_scan_time is not None:
-            delta_t = (scan_msg.header.stamp.sec + scan_msg.header.stamp.nanosec * 1e-9) - self.prev_scan_time
+            delta_t = scan_time - self.prev_scan_time
             
             if delta_t > 0:
                 finite_diff_rates = -(ranges - self.prev_ranges) / delta_t
@@ -91,14 +94,17 @@ class SafetyNode(Node):
         range_rates[range_rates >= 0] = float('-inf') # Ensure valid calculations
         ittc_values = ranges / np.maximum(-range_rates, 1e-6) # Avoid division by zero
 
+        self.get_logger().info(f'Range Rate Max Value: {np.max(range_rates)} / Range Rate Min Value: {np.min(range_rates)}')  
+        self.get_logger().info(f'iTTC Max Value: {np.max(ittc_values)} / iTTC Min Value: {np.min(ittc_values)}')       
+
         # Check for imminent collisions
         if np.any(ittc_values < self.collision_threshold):
             self.get_logger().warn("COLLISION WARNIN: iTTC below threshold! Braking...")
-            self.publish_drive_command(0.0, 0.0) # Hald vehicle
+            # self.publish_drive_command(0.0, 0.0) # Hald vehicle
         
         # Store current scan for next iteration
         self.prev_ranges = ranges
-        self.prev_scan_time = scan_msg.header.stamp.sec + scan_msg.header.stamp.nanosec * 1e-9
+        self.prev_scan_time = scan_time
 
 
     def publish_drive_command(self, speed, steering_angle):
