@@ -1,27 +1,26 @@
 from setuptools import setup
-import os
-from glob import glob
 
 package_name = 'lab1_pkg'
 
 setup(
     name=package_name,
-    version='0.1.0',
+    version='0.0.0',
     packages=[package_name],
     data_files=[
-        ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (f'share/{package_name}/launch', glob('launch/*.py')),  # <-- This line ensures launch files are installed
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='JY',
-    maintainer_email='darkmoonz1004@gmail.com',
-    description='A package with both C++ and Python nodes',
-    license='Apache License 2.0',
+    maintainer='kipp',
+    maintainer_email='kipp@todo.todo',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'talker = lab1_pkg.talker:main',
             'relay = lab1_pkg.relay:main',
         ],
     },
