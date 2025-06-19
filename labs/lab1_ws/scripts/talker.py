@@ -1,4 +1,6 @@
 # lab1_pkg/talker.py
+import sys
+sys.path.append('/home/kipp/ackermann_ws/install/ackermann_msgs/lib/python3.8/site-packages')
 import rclpy
 from rclpy.node import Node
 from ackermann_msgs.msg import AckermannDriveStamped
